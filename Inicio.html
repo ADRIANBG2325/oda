@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Tareas</title>    <!-- Enlace a la hoja de esG654A< S6¿Ñilos externa -->
+    <link rel="stylesheet" href="sty.css">
+    <!-- Enlace al archivo de script con 'defer' para que se cargue después del HTML -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Sección para agregar nuevas tareas -->
+        <section class="task-form">
+            <h2>Agregar Tarea</h2>
+            <!-- Campo para la descripción de la tarea -->
+            <input type="text" id="task-desc" placeholder="Descripción" required>
+            <!-- Campo para la fecha de la tarea -->
+            <input type="date" id="task-date" required>
+            <!-- Campo para la hora de la tarea -->
+            <input type="time" id="task-time" required>
+            <!-- Selector de estado de la tarea -->
+            <select id="task-status">
+                <option value="pendiente">Pendiente</option>
+                <option value="en-proceso">En Proceso</option>
+                <option value="realizada">Realizada</option>
+            </select>
+            <!-- Botón para agregar la tarea -->
+            <button id="addTaskBtn">Agregar</button>
+        </section>
+
+        <!-- Sección de la lista de tareas -->
+        <section class="task-list-container">
+            <h2>Lista de Tareas</h2>
+            <!-- Sección de tareas pendientes -->
+            <div class="task-section" id="pendientes">
+                <h3>Pendientes</h3>
+                <ul class="task-list"></ul>
+            </div>
+            <!-- Sección de tareas en proceso -->
+            <div class="task-section" id="en-proceso">
+                <h3>En Proceso</h3>
+                <ul class="task-list"></ul>
+            </div>
+            <!-- Sección de tareas realizadas -->
+            <div class="task-section" id="realizadas">
+                <h3>Realizadas</h3>
+                <ul class="task-list"></ul>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+
+
+
+
